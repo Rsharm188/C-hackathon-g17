@@ -1,0 +1,274 @@
+[Tue May 26 12:23:32 2026] [SYSTEM] === Vehicle Monitoring System Started ===
+[Tue May 26 12:23:32 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:33 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:33 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:34 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:34 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:35 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:35 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:36 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:36 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:37 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:37 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:38 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:38 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:39 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:39 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:39 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:40 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:40 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:40 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:41 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:41 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:41 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:41 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:42 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:42 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:42 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:43 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:43 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:43 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:44 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:44 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:44 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:44 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:45 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:45 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:45 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:46 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:46 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:46 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:47 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:47 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:47 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:47 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:47 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:47 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:48 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:48 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:48 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:48 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:49 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:49 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:49 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:49 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:50 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:50 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:23:39 2026 | ID: #1
+[Tue May 26 12:23:50 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:50 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:50 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:51 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:51 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:51 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:51 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:52 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:52 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:52 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:52 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:53 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:53 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:53 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:53 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:53 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:53 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:53 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:23:53 2026 | ID: #4
+[Tue May 26 12:23:54 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:54 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:54 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:54 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:54 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:23:53 2026 | ID: #4
+[Tue May 26 12:23:55 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:55 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:55 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:55 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:23:53 2026 | ID: #4
+[Tue May 26 12:23:55 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:56 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:56 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:56 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:56 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:23:53 2026 | ID: #4
+[Tue May 26 12:23:56 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:56 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:56 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:57 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:57 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:57 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:57 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:58 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:58 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:58 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:58 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:59 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:23:59 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:23:59 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:23:59 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:00 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:00 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:00 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:00 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:00 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:00 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:00 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:01 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:01 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:01 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:01 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:01 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:02 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:02 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:02 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:02 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:02 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:03 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:03 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:03 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:03 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:03 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:03 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:03 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:03 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:04 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:04 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:04 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:04 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:04 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:05 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:05 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:05 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:05 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:05 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:06 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:06 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:06 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:06 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:06 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:06 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:06 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:06 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:06 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:06 2026 | ID: #6
+[Tue May 26 12:24:07 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:07 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:07 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:07 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:07 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:06 2026 | ID: #6
+[Tue May 26 12:24:07 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:08 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:08 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:08 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:08 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:00 2026 | ID: #5
+[Tue May 26 12:24:08 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:06 2026 | ID: #6
+[Tue May 26 12:24:08 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:09 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:09 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:09 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:06 2026 | ID: #6
+[Tue May 26 12:24:09 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:09 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:09 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:09 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:09 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:06 2026 | ID: #6
+[Tue May 26 12:24:10 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:10 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:10 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:10 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:06 2026 | ID: #6
+[Tue May 26 12:24:10 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:11 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:11 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:11 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:11 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:06 2026 | ID: #6
+[Tue May 26 12:24:11 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:11 2026 | ID: #7
+[Tue May 26 12:24:11 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:12 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:12 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:12 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:11 2026 | ID: #7
+[Tue May 26 12:24:12 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:12 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:12 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:12 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:12 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:11 2026 | ID: #7
+[Tue May 26 12:24:13 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:13 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:13 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:13 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:11 2026 | ID: #7
+[Tue May 26 12:24:13 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:14 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:14 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:14 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:14 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:11 2026 | ID: #7
+[Tue May 26 12:24:14 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:15 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:15 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:15 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:11 2026 | ID: #7
+[Tue May 26 12:24:15 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:15 2026 | ID: #8
+[Tue May 26 12:24:15 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:15 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:15 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:15 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:15 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:11 2026 | ID: #7
+[Tue May 26 12:24:15 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:15 2026 | ID: #8
+[Tue May 26 12:24:16 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:16 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:16 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:16 2026] [EVENT] ALERT: [ WARNING]                    SEATBELT WARNING | Source:                   BELT_01 | Time: Tue May 26 12:24:11 2026 | ID: #7
+[Tue May 26 12:24:16 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:17 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:17 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:17 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:17 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:18 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:18 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:18 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:18 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:18 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:18 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:18 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:18 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:19 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:19 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:19 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:19 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:19 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:20 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:20 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:20 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:20 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:20 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:21 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:21 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:21 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:21 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:21 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:21 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:21 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:21 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:22 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:22 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:22 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:22 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:22 2026] [EVENT] ALERT: [CRITICAL]                   OVERSPEED WARNING | Source:                    SPD_01 | Time: Tue May 26 12:24:22 2026 | ID: #10
+[Tue May 26 12:24:22 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:23 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:23 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:23 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:23 2026] [EVENT] ALERT: [CRITICAL]                   OVERSPEED WARNING | Source:                    SPD_01 | Time: Tue May 26 12:24:22 2026 | ID: #10
+[Tue May 26 12:24:23 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:23 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:24 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:24 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:24 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:24 2026] [EVENT] ALERT: [CRITICAL]                   OVERSPEED WARNING | Source:                    SPD_01 | Time: Tue May 26 12:24:22 2026 | ID: #10
+[Tue May 26 12:24:24 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:24 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:24 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:24 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:24 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:24 2026] [EVENT] ALERT: [CRITICAL]                   OVERSPEED WARNING | Source:                    SPD_01 | Time: Tue May 26 12:24:22 2026 | ID: #10
+[Tue May 26 12:24:25 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:25 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:25 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:25 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:25 2026] [EVENT] ALERT: [CRITICAL]                   OVERSPEED WARNING | Source:                    SPD_01 | Time: Tue May 26 12:24:22 2026 | ID: #10
+[Tue May 26 12:24:25 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Tue May 26 12:24:26 2026] [EVENT] ALERT: [ WARNING]             ENGINE TEMPERATURE HIGH | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:46 2026 | ID: #2
+[Tue May 26 12:24:26 2026] [EVENT] ALERT: [CRITICAL]            CRITICAL ENGINE OVERHEAT | Source:               ENG_TEMP_01 | Time: Tue May 26 12:23:51 2026 | ID: #3
+[Tue May 26 12:24:26 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
+[Tue May 26 12:24:26 2026] [EVENT] ALERT: [CRITICAL]                   OVERSPEED WARNING | Source:                    SPD_01 | Time: Tue May 26 12:24:22 2026 | ID: #10
+[Tue May 26 12:24:26 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed

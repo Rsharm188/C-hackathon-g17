@@ -2,36 +2,39 @@
 #pragma once
 #include <string>
 #include <fstream>
-#include <memory>
 #include <mutex>
-#include <queue>
-#include "Alert.hpp"
+#include <vector>
+#include <stdexcept>
+#include "core/Alert.hpp"
+
+class LoggerException : public std::runtime_error {
+public:
+    explicit LoggerException(const std::string& msg) : std::runtime_error(msg) {}
+};
 
 class EventLogger {
 private:
-    std::ofstream logFile;  // RAII: file handle
-    std::string logFilePath;
-    std::mutex logMutex;
-    std::queue<std::string> logQueue;
-    
-    bool isOpen;
-    
-    std::string formatLogEntry(const std::string& message);
-    
+    std::string   filePath_;
+    std::ofstream logFile_;
+    mutable std::mutex logMutex_;
+
+    void writeLine(const std::string& category, const std::string& message);
+
 public:
-    EventLogger(const std::string& filePath);
-    ~EventLogger();  // RAII cleanup
-    
-    // Prevent copying
+    explicit EventLogger(const std::string& filePath);
+    ~EventLogger();
+
     EventLogger(const EventLogger&) = delete;
     EventLogger& operator=(const EventLogger&) = delete;
-    
+
     void logAlert(const Alert& alert);
     void logEvent(const std::string& event);
-    void logSensorData(const std::string& sensorId, double value);
-    
-    void flush();
-    
-    // Search functionality using STL algorithms
-    std::vector<std::string> searchLogs(const std::string& keyword);
+    void logSensorReading(const std::string& sensorId, double value, const std::string& unit);
+    void logSystemMessage(const std::string& msg);
+
+    std::vector<std::string> searchLogs(const std::string& keyword) const;
+    std::vector<std::string> getCriticalEvents() const;
+
+    void        flush();
+    std::string getFilePath() const;
 };

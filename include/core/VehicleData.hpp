@@ -7,36 +7,29 @@
 class VehicleData {
 private:
     mutable std::mutex dataMutex;
-    
-    // Sensor readings
-    double engineTemp;
-    double batteryVoltage;
-    double speed;
-    double tirePressure;
-    bool doorOpen;
-    bool seatbeltLocked;
-    
-    std::map<std::string, double> additionalData;
-    
+    double engineTemp     = 85.0;
+    double batteryVoltage = 12.5;
+    double speed          = 0.0;
+    double tirePressure   = 30.0;
+    bool   doorOpen       = false;
+    bool   seatbeltLocked = true;
+
 public:
-    VehicleData();
-    
-    // Thread-safe setters
-    void setEngineTemp(double temp);
-    void setBatteryVoltage(double voltage);
-    void setSpeed(double spd);
-    void setTirePressure(double pressure);
-    void setDoorStatus(bool open);
-    void setSeatbeltStatus(bool locked);
-    
-    // Thread-safe getters
-    double getEngineTemp() const;
+    VehicleData() = default;
+
+    void setEngineTemp(double val);
+    void setBatteryVoltage(double val);
+    void setSpeed(double val);
+    void setTirePressure(double val);
+    void setDoorOpen(bool val);
+    void setSeatbeltLocked(bool val);
+
+    double getEngineTemp()     const;
     double getBatteryVoltage() const;
-    double getSpeed() const;
-    double getTirePressure() const;
-    bool isDoorOpen() const;
-    bool isSeatbeltLocked() const;
-    
-    // Bulk data access
-    std::map<std::string, double> getAllData() const;
+    double getSpeed()          const;
+    double getTirePressure()   const;
+    bool   isDoorOpen()        const;
+    bool   isSeatbeltLocked()  const;
+
+    std::map<std::string, double> snapshot() const;
 };

@@ -1,6 +1,7 @@
 #include "../../include/managers/ThreadManager.hpp"
 #include <iostream>
 #include <chrono>
+#include <sstream>
 
 using namespace std::chrono_literals;
 
