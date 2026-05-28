@@ -272,3 +272,31 @@
 [Tue May 26 12:24:26 2026] [EVENT] ALERT: [ WARNING]                   DOOR OPEN WARNING | Source:                   DOOR_01 | Time: Tue May 26 12:24:18 2026 | ID: #9
 [Tue May 26 12:24:26 2026] [EVENT] ALERT: [CRITICAL]                   OVERSPEED WARNING | Source:                    SPD_01 | Time: Tue May 26 12:24:22 2026 | ID: #10
 [Tue May 26 12:24:26 2026] [EVENT] SENSOR_UPDATE: all sensors refreshed
+[Thu May 28 10:44:44 2026] [SYSTEM] === Vehicle Monitoring System Started ===
+[Thu May 28 10:44:44 2026] [SYSTEM] === Vehicle Monitoring System Stopped ===
+[Thu May 28 10:47:14 2026] [SYSTEM] === Vehicle Monitoring System Started ===
+[Thu May 28 10:47:14 2026] [SYSTEM] === Vehicle Monitoring System Stopped ===
+[Thu May 28 10:49:18 2026] [SYSTEM] === Vehicle Monitoring System Started ===
+[Thu May 28 10:49:25 2026] [EVENT] TEST CASE 1 | Temp:95.000000 Volt:12.500000 Speed:60.000000
+[Thu May 28 10:49:30 2026] [EVENT] TEST CASE 2 | Temp:118.000000 Volt:12.000000 Speed:80.000000
+[Thu May 28 10:49:31 2026] [EVENT] TEST CASE 3 | Temp:95.000000 Volt:10.500000 Speed:40.000000
+[Thu May 28 10:49:31 2026] [EVENT] TEST CASE 4 | Temp:95.000000 Volt:12.500000 Speed:160.000000
+[Thu May 28 10:49:32 2026] [EVENT] TEST CASE 5 | Temp:95.000000 Volt:12.500000 Speed:30.000000
+[Thu May 28 10:49:33 2026] [EVENT] TEST CASE 6 | Temp:125.000000 Volt:10.200000 Speed:170.000000
+[Thu May 28 10:49:33 2026] [SYSTEM] === Vehicle Monitoring System Stopped ===
+[Thu May 28 10:51:32 2026] [SYSTEM] === Vehicle Monitoring System Started ===
+[Thu May 28 10:51:36 2026] [EVENT] TEST CASE 1 | Temp:95.000000 Volt:12.500000 Speed:60.000000
+[Thu May 28 10:51:39 2026] [EVENT] TEST CASE 2 | Temp:118.000000 Volt:12.000000 Speed:80.000000
+[Thu May 28 10:51:40 2026] [EVENT] TEST CASE 3 | Temp:95.000000 Volt:10.500000 Speed:40.000000
+[Thu May 28 10:51:40 2026] [EVENT] TEST CASE 4 | Temp:95.000000 Volt:12.500000 Speed:160.000000
+[Thu May 28 10:51:41 2026] [EVENT] TEST CASE 5 | Temp:95.000000 Volt:12.500000 Speed:30.000000
+[Thu May 28 10:51:41 2026] [EVENT] TEST CASE 6 | Temp:125.000000 Volt:10.200000 Speed:170.000000
+[Thu May 28 10:51:41 2026] [SYSTEM] === Vehicle Monitoring System Stopped ===
+[Thu May 28 10:53:17 2026] [SYSTEM] === Vehicle Monitoring System Started ===
+[Thu May 28 10:53:19 2026] [EVENT] TEST CASE 1 | Temp:95.000000 Volt:12.500000 Speed:60.000000
+[Thu May 28 10:53:22 2026] [EVENT] TEST CASE 2 | Temp:118.000000 Volt:12.000000 Speed:80.000000
+[Thu May 28 10:53:25 2026] [EVENT] TEST CASE 3 | Temp:95.000000 Volt:10.500000 Speed:40.000000
+[Thu May 28 10:53:26 2026] [EVENT] TEST CASE 4 | Temp:95.000000 Volt:12.500000 Speed:160.000000
+[Thu May 28 10:53:26 2026] [EVENT] TEST CASE 5 | Temp:95.000000 Volt:12.500000 Speed:30.000000
+[Thu May 28 10:53:26 2026] [EVENT] TEST CASE 6 | Temp:125.000000 Volt:10.200000 Speed:170.000000
+[Thu May 28 10:53:26 2026] [SYSTEM] === Vehicle Monitoring System Stopped ===

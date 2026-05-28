@@ -31,7 +31,7 @@ int VehicleStatistics::getWarningAlerts()  const { return warningAlerts; }
 int VehicleStatistics::getInfoAlerts()     const { return infoAlerts; }
 
 void VehicleStatistics::display() const {
-    std::cout << "\n  Alerts  — Total: " << totalAlerts
+    std::cout << "\n  Alerts   Total: " << totalAlerts
               << "  Critical: "  << criticalAlerts
               << "  Warning: "   << warningAlerts
               << "  Info: "      << infoAlerts << "\n";
