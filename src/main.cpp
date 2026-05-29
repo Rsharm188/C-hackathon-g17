@@ -69,7 +69,6 @@ static void runJsonMode(const std::shared_ptr<VehicleData>&  vehicleData,
                         const std::shared_ptr<Dashboard>&    dashboard,
                         const std::shared_ptr<EventLogger>&  logger) {
 
-    // List available test files
     std::vector<std::string> files;
     try {
         files = listTestFiles("tests");
@@ -82,47 +81,53 @@ static void runJsonMode(const std::shared_ptr<VehicleData>&  vehicleData,
         std::cerr << "No test files found in tests/\n";
         return;
     }
-    while(1){
-    std::cout << "\nAvailable Test Cases:\n";
-    for (size_t i = 0; i < files.size(); ++i){
-        std::cout << "  [" << i + 1 << "] " << files[i] << "\n";
-    }
-        std::cout <<"Or enter 'q' for exiting the code!\n";
-    
 
-    std::cout << "\nSelect test case: ";
+    while (true) {
+        std::cout << "\nAvailable Test Cases:\n";
+        for (size_t i = 0; i < files.size(); ++i)
+            std::cout << "  [" << i + 1 << "] " << files[i] << "\n";
+        std::cout << "  [q] Quit\n";
+        std::cout << "\nSelect test case: ";
 
-        char choice1;
-        std::cin >> choice1;
-        if(choice1=='q'){
+        std::string input;
+        std::cin >> input;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+        if (input == "q" || input == "Q") {
+            std::cout << "\nExiting test mode.\n";
             break;
         }
-        else{
-            int choice = choice1-'0';
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        
+
+        int choice = 0;
+        try {
+            choice = std::stoi(input);
+        } catch (...) {
+            std::cerr << "Invalid input, try again.\n";
+            continue;
+        }
+
         if (choice < 1 || choice > static_cast<int>(files.size())) {
-            std::cerr << "Invalid choice.\n";
-            return;
+            std::cerr << "Invalid choice, try again.\n";
+            continue;
         }
 
         std::string selectedFile = "tests/" + files[choice - 1] + ".json";
         std::cout << "\nRunning: " << files[choice - 1] << "\n";
-        std::cout << "Press Enter to step through each cycle...\n";
 
         std::vector<TestCase> cases;
         try {
             cases = loadTestCases(selectedFile);
         } catch (const std::exception& e) {
             std::cerr << "Failed to load: " << e.what() << "\n";
-            return;
+            continue;
         }
 
-        std::cout << "Loaded " << cases.size() << " test cases.\n";
+        std::cout << "Loaded " << cases.size() << " cycles.\n";
+        std::cout << "Press Enter to step through each cycle...\n";
 
         int i = 0;
         for (const auto& tc : cases) {
-            std::cout << "\n[Press Enter next cycle " << ++i << "/" << cases.size() << "]";
+            std::cout << "\n[Press Enter for cycle " << ++i << "/" << cases.size() << "]";
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
             vehicleData->setEngineTemp(tc.engineTemp);
@@ -135,15 +140,11 @@ static void runJsonMode(const std::shared_ptr<VehicleData>&  vehicleData,
             alertMgr->evaluate(*vehicleData);
             dashboard->render();
 
-            logger->logEvent("TEST CASE " + std::to_string(i) +
-                            " | Temp:"  + std::to_string(tc.engineTemp) +
-                            " Volt:"   + std::to_string(tc.batteryVoltage) +
-                            " Speed:"  + std::to_string(tc.speed));
+            logger->logSensorSnapshot(*vehicleData);
         }
 
         std::cout << "\nAll cycles complete.\n";
         runPostDemo(alertMgr, logger);
-        }
     }
 }
 
@@ -166,10 +167,10 @@ int main() {
         mode = 0;
     }
 
+    // ── Build shared resources ────────────────────────────────────────────────
     auto vehicleData = std::make_shared<VehicleData>();
     auto stats       = std::make_shared<VehicleStatistics>();
     auto sensorMgr   = std::make_shared<SensorManager>(vehicleData, stats);
-    auto alertMgr    = std::make_shared<AlertManager>(stats);
 
     std::shared_ptr<EventLogger> logger;
     try {
@@ -178,6 +179,9 @@ int main() {
         std::cerr << "FATAL: " << e.what() << "\n";
         return EXIT_FAILURE;
     }
+
+    // logger constructed before alertMgr so it can be passed in
+    auto alertMgr  = std::make_shared<AlertManager>(stats, logger);
 
     sensorMgr->initialise();
     auto dashboard = std::make_shared<Dashboard>(vehicleData, alertMgr, sensorMgr, stats);

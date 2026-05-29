@@ -6,6 +6,7 @@
 #include <vector>
 #include <stdexcept>
 #include "core/Alert.hpp"
+#include "core/VehicleData.hpp"
 
 class LoggerException : public std::runtime_error {
 public:
@@ -19,6 +20,8 @@ private:
     mutable std::mutex logMutex_;
 
     void writeLine(const std::string& category, const std::string& message);
+    void writeRaw(const std::string& text);
+    std::string timeNow() const;
 
 public:
     explicit EventLogger(const std::string& filePath);
@@ -27,10 +30,16 @@ public:
     EventLogger(const EventLogger&) = delete;
     EventLogger& operator=(const EventLogger&) = delete;
 
-    void logAlert(const Alert& alert);
+    void logAlertStillActive(const Alert& alert);
+
+    // Old methods (kept for compatibility)
     void logEvent(const std::string& event);
-    void logSensorReading(const std::string& sensorId, double value, const std::string& unit);
     void logSystemMessage(const std::string& msg);
+
+    // New structured methods
+    void logSensorSnapshot(const VehicleData& data);
+    void logAlertRaised(const Alert& alert);
+    void logAlertCleared(const std::string& message, const std::string& source);
 
     std::vector<std::string> searchLogs(const std::string& keyword) const;
     std::vector<std::string> getCriticalEvents() const;
