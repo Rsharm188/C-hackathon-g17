@@ -1,0 +1,4 @@
+[
+  { "engineTemp": 125.0, "batteryVoltage": 10.2, "speed": 170.0, "tirePressure": 16.0, "doorOpen": true, "seatbeltLocked": false },
+  { "engineTemp": 128.0, "batteryVoltage": 10.0, "speed": 180.0, "tirePressure": 15.5, "doorOpen": true, "seatbeltLocked": false }
+]

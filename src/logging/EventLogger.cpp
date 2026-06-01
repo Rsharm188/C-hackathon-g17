@@ -2,27 +2,34 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <iomanip>
+#include <chrono>
+#include <ctime>
 #include <algorithm>
 #include <stdexcept>
+#include <filesystem>
 
-// ── Constructor (RAII — opens file) ───────────────────────────────────────────
-// Demonstrates: RAII, Exception Handling (throws on failure)
+std::string EventLogger::timeNow() const {
+    auto now    = std::chrono::system_clock::now();
+    std::time_t t  = std::chrono::system_clock::to_time_t(now);
+    std::tm*    tm = std::localtime(&t);
+    char buf[16];
+    std::strftime(buf, sizeof(buf), "%H:%M:%S", tm);
+    return std::string(buf);
+}
+
 EventLogger::EventLogger(const std::string& filePath)
     : filePath_(filePath)
 {
-    // Throws LoggerException if file cannot be opened — exception-safe design
-    try {
-        logFile_.open(filePath_, std::ios::out | std::ios::app);
-        if (!logFile_.is_open())
-            throw LoggerException("Cannot open log file: " + filePath_);
-    } catch (const std::exception& e) {
-        throw LoggerException(e.what());
-    }
-
+    std::filesystem::create_directories(
+        std::filesystem::path(filePath).parent_path()
+    );
+    logFile_.open(filePath_, std::ios::out | std::ios::app);
+    if (!logFile_.is_open())
+        throw LoggerException("Cannot open log file: " + filePath_);
     logSystemMessage("=== Vehicle Monitoring System Started ===");
 }
 
-// ── Destructor (RAII — closes file) ───────────────────────────────────────────
 EventLogger::~EventLogger() {
     try {
         logSystemMessage("=== Vehicle Monitoring System Stopped ===");
@@ -30,76 +37,84 @@ EventLogger::~EventLogger() {
             logFile_.flush();
             logFile_.close();
         }
-    } catch (...) {
-        // Never throw from destructor
-    }
+    } catch (...) {}
 }
 
-// ── Internal writeLine ─────────────────────────────────────────────────────────
 void EventLogger::writeLine(const std::string& category, const std::string& message) {
     std::lock_guard<std::mutex> lock(logMutex_);
     if (!logFile_.is_open()) return;
-
-    // Demonstrates: file streams (std::ofstream)
-    logFile_ << "[" << currentTimestamp() << "] "
-             << "[" << category << "] "
-             << message << "\n";
+    logFile_ << "[" << timeNow() << "] "
+             << std::left << std::setw(16) << ("[" + category + "]")
+             << " " << message << "\n";
     logFile_.flush();
 }
 
-// ── Public logging methods ─────────────────────────────────────────────────────
-void EventLogger::logAlert(const Alert& alert) {
-    std::ostringstream oss;
-    oss << alert;   // uses operator<< on Alert — operator overloading in action
-    writeLine(severityToString(alert.getSeverity()), oss.str());
+void EventLogger::writeRaw(const std::string& text) {
+    std::lock_guard<std::mutex> lock(logMutex_);
+    if (!logFile_.is_open()) return;
+    logFile_ << text;
+    logFile_.flush();
 }
+
 
 void EventLogger::logEvent(const std::string& event) {
     writeLine("EVENT", event);
 }
 
-void EventLogger::logSensorReading(const std::string& sensorId,
-                                    double value,
-                                    const std::string& unit) {
-    writeLine("SENSOR", sensorId + " = " + std::to_string(value) + " " + unit);
-}
-
 void EventLogger::logSystemMessage(const std::string& msg) {
-    writeLine("SYSTEM", msg);
+    writeRaw("\n================================================================================\n");
+    writeRaw(" " + msg + " — " + timeNow() + "\n");
+    writeRaw("================================================================================\n\n");
 }
 
-// ── searchLogs — demonstrates: file streams + STL algorithms + lambdas ─────────
-std::vector<std::string> EventLogger::searchLogs(const std::string& keyword) const {
-    std::lock_guard<std::mutex> lock(logMutex_);
-    std::vector<std::string> results;
-
-    // Exception handling for file read failure
-    try {
-        std::ifstream reader(filePath_);
-        if (!reader.is_open())
-            throw LoggerException("Cannot open log for search: " + filePath_);
-
-        std::string line;
-        while (std::getline(reader, line)) {
-            // Lambda: true if line contains keyword (used with copy_if pattern)
-            auto containsKeyword = [&keyword](const std::string& l) {
-                return l.find(keyword) != std::string::npos;
-            };
-            if (containsKeyword(line))
-                results.push_back(line);
-        }
-    } catch (const LoggerException&) {
-        throw;
-    } catch (const std::exception& e) {
-        throw LoggerException(std::string("Search failed: ") + e.what());
+void EventLogger::logAlertStillActive(const Alert& alert) {
+    std::string sev;
+    switch (alert.getSeverity()) {
+        case AlertSeverity::CRITICAL: sev = "CRITICAL"; break;
+        case AlertSeverity::WARNING:  sev = "WARNING";  break;
+        case AlertSeverity::INFO:     sev = "INFO";     break;
     }
-
-    return results;
+    writeLine("STILL ACTIVE",
+              "— " + alert.getMessage() +
+              " [" + sev + "]" +
+              " | Source: " + alert.getSource() +
+              " | ID: #"   + std::to_string(alert.getId()));
+    writeRaw("\n");
 }
 
-// ── getCriticalEvents — lambda filtering over file lines ──────────────────────
-std::vector<std::string> EventLogger::getCriticalEvents() const {
-    return searchLogs("[CRITICAL]");
+void EventLogger::logSensorSnapshot(const VehicleData& data) {
+    std::ostringstream oss;
+     writeRaw("\n\n\n"); 
+    oss << std::fixed << std::setprecision(1);
+    oss << "Temp: "   << data.getEngineTemp()     << "C"
+        << "  Volt: "  << data.getBatteryVoltage() << "V"
+        << "  Speed: " << data.getSpeed()          << "km/h"
+        << "  Tyre: "  << data.getTirePressure()   << "PSI"
+        << "  Door: "  << (data.isDoorOpen()       ? "OPEN"     : "CLOSED")
+        << "  Belt: "  << (data.isSeatbeltLocked() ? "LOCKED"   : "UNLOCKED");
+
+    writeLine("SENSOR UPDATE", "— " + oss.str());
+    writeRaw("\n");  // two blank lines after every sensor block
+}
+
+void EventLogger::logAlertRaised(const Alert& alert) {
+    std::string sev;
+    switch (alert.getSeverity()) {
+        case AlertSeverity::CRITICAL: sev = "CRITICAL"; break;
+        case AlertSeverity::WARNING:  sev = "WARNING";  break;
+        case AlertSeverity::INFO:     sev = "INFO";     break;
+    }
+    writeLine("ALERT RAISED",
+              "— " + alert.getMessage() +
+              " [" + sev + "]" +
+              " | Source: " + alert.getSource() +
+              " | ID: #"   + std::to_string(alert.getId()));
+    writeRaw("\n");
+}
+
+void EventLogger::logAlertCleared(const std::string& message, const std::string& source) {
+    writeLine("ALERT CLEARED", "— " + message + " | Source: " + source);
+    writeRaw("\n");
 }
 
 void EventLogger::flush() {
@@ -108,3 +123,20 @@ void EventLogger::flush() {
 }
 
 std::string EventLogger::getFilePath() const { return filePath_; }
+
+std::vector<std::string> EventLogger::searchLogs(const std::string& keyword) const {
+    std::lock_guard<std::mutex> lock(logMutex_);
+    std::vector<std::string> results;
+    std::ifstream reader(filePath_);
+    if (!reader.is_open())
+        throw LoggerException("Cannot open log for search: " + filePath_);
+    std::string line;
+    while (std::getline(reader, line))
+        if (line.find(keyword) != std::string::npos)
+            results.push_back(line);
+    return results;
+}
+
+std::vector<std::string> EventLogger::getCriticalEvents() const {
+    return searchLogs("CRITICAL");
+}

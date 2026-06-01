@@ -1,0 +1,36 @@
+# Build directory
+build/
+
+# Logs and runtime output
+logs/
+*.log
+*.txt
+
+# Compiled binaries
+*.exe
+*.out
+*.o
+*.a
+*.dll
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# Ninja build files
+*.ninja
+.ninja_deps
+.ninja_log
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# MSYS2/MinGW
+*.d

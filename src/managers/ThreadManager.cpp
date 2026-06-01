@@ -71,9 +71,9 @@ void ThreadManager::pushLogEvent(const std::string& event) {
 //               runtime polymorphism via sensorManager_->updateAll()
 void ThreadManager::runSensorThread() {
     while (running_.load()) {
-        sensorManager_->updateAll();                         // polymorphic dispatch
-        pushLogEvent("SENSOR_UPDATE: all sensors refreshed");
-        std::this_thread::sleep_for(500ms);                  // 2 Hz update rate
+        sensorManager_->updateAll();
+        logger_->logSensorSnapshot(*vehicleData_);
+        std::this_thread::sleep_for(500ms);
     }
 }
 
@@ -82,14 +82,7 @@ void ThreadManager::runSensorThread() {
 // Demonstrates: mutex (inside VehicleData & AlertManager), shared_ptr
 void ThreadManager::runMonitorThread() {
     while (running_.load()) {
-        alertManager_->evaluate(*vehicleData_);              // thread-safe read inside
-
-        // Push any new alerts to the log queue
-        for (const auto& alert : alertManager_->getActiveAlerts()) {
-            std::ostringstream oss;
-            oss << *alert;
-            pushLogEvent("ALERT: " + oss.str());
-        }
+        alertManager_->evaluate(*vehicleData_);
         std::this_thread::sleep_for(750ms);
     }
 }
