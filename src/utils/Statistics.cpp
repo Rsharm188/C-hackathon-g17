@@ -12,6 +12,7 @@ void VehicleStatistics::recordAlert(AlertSeverity sev) {
     }
 }
 
+
 void VehicleStatistics::recordSensorUpdate(const std::string& sensorId, double value) {
     ++sensorUpdateCount[sensorId];
 
