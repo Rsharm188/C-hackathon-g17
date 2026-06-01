@@ -64,10 +64,11 @@ static void runPostDemo(const std::shared_ptr<AlertManager>& alertMgr,
     std::cout << "========================================\n";
 }
 
-static void runJsonMode(const std::shared_ptr<VehicleData>&  vehicleData,
-                        const std::shared_ptr<AlertManager>& alertMgr,
-                        const std::shared_ptr<Dashboard>&    dashboard,
-                        const std::shared_ptr<EventLogger>&  logger) {
+static void runJsonMode(const std::shared_ptr<VehicleData>&   vehicleData,
+                        const std::shared_ptr<AlertManager>&  alertMgr,
+                        const std::shared_ptr<Dashboard>&     dashboard,
+                        const std::shared_ptr<EventLogger>&   logger,
+                        const std::shared_ptr<SensorManager>& sensorMgr) {
 
     std::vector<std::string> files;
     try {
@@ -130,16 +131,19 @@ static void runJsonMode(const std::shared_ptr<VehicleData>&  vehicleData,
             std::cout << "\n[Press Enter for cycle " << ++i << "/" << cases.size() << "]";
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-            vehicleData->setEngineTemp(tc.engineTemp);
-            vehicleData->setBatteryVoltage(tc.batteryVoltage);
-            vehicleData->setSpeed(tc.speed);
-            vehicleData->setTirePressure(tc.tirePressure);
-            vehicleData->setDoorOpen(tc.doorOpen);
-            vehicleData->setSeatbeltLocked(tc.seatbeltLocked);
+            // Inject into mock sensors — they push to VehicleData via updateAll()
+            sensorMgr->injectTestCase(
+                tc.engineTemp,
+                tc.batteryVoltage,
+                tc.speed,
+                tc.tirePressure,
+                tc.doorOpen,
+                tc.seatbeltLocked
+            );
+            sensorMgr->updateAll();
 
             alertMgr->evaluate(*vehicleData);
             dashboard->render();
-
             logger->logSensorSnapshot(*vehicleData);
         }
 
@@ -180,16 +184,19 @@ int main() {
         return EXIT_FAILURE;
     }
 
-    // logger constructed before alertMgr so it can be passed in
-    auto alertMgr  = std::make_shared<AlertManager>(stats, logger);
+    auto alertMgr = std::make_shared<AlertManager>(stats, logger);
 
-    sensorMgr->initialise();
-    auto dashboard = std::make_shared<Dashboard>(vehicleData, alertMgr, sensorMgr, stats);
-
+    // ── Mode 1: JSON Test ─────────────────────────────────────────────────────
     if (mode == 1) {
-        runJsonMode(vehicleData, alertMgr, dashboard, logger);
+        sensorMgr->initialiseForTest();
+        auto dashboard = std::make_shared<Dashboard>(vehicleData, alertMgr, sensorMgr, stats);
+        runJsonMode(vehicleData, alertMgr, dashboard, logger, sensorMgr);
         return EXIT_SUCCESS;
     }
+
+    // ── Mode 0: Live Simulation ───────────────────────────────────────────────
+    sensorMgr->initialise();
+    auto dashboard = std::make_shared<Dashboard>(vehicleData, alertMgr, sensorMgr, stats);
 
     std::cout << "\n[Mode 0] Live Simulation starting. Press Ctrl+C to stop.\n\n";
 

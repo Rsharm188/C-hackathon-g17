@@ -105,7 +105,7 @@ void EventLogger::logAlertRaised(const Alert& alert) {
         case AlertSeverity::INFO:     sev = "INFO";     break;
     }
     writeLine("ALERT RAISED",
-              "— " + alert.getMessage() +
+              " " + alert.getMessage() +
               " [" + sev + "]" +
               " | Source: " + alert.getSource() +
               " | ID: #"   + std::to_string(alert.getId()));
@@ -113,7 +113,7 @@ void EventLogger::logAlertRaised(const Alert& alert) {
 }
 
 void EventLogger::logAlertCleared(const std::string& message, const std::string& source) {
-    writeLine("ALERT CLEARED", "— " + message + " | Source: " + source);
+    writeLine("ALERT CLEARED", "  " + message + " | Source: " + source);
     writeRaw("\n");
 }
 

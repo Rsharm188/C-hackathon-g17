@@ -3,29 +3,34 @@
 #include <iostream>
 #include <cstdlib>
 
-// ─── EngineTemperatureSensor ───────────────────────────────────────────────────
 EngineTemperatureSensor::EngineTemperatureSensor()
-    : Sensor("ENG_TEMP_01", SensorType::ENGINE_TEMPERATURE),
-      temperature(85.0)
-{}
+    : Sensor("ENG_TEMP_01", SensorType::ENGINE_TEMPERATURE), temperature(85.0) {}
 
 void EngineTemperatureSensor::update() {
-    // Simulated random walk within plausible automotive range
-    double delta = (std::rand() % 11 - 4) * 0.5;   // -2.0 to +3.0 °C
+    double delta = (std::rand() % 11 - 4) * 0.5;
     temperature += delta;
-    // Clamp
     if (temperature < Thresholds::ENGINE_TEMP_MIN) temperature = Thresholds::ENGINE_TEMP_MIN;
     if (temperature > Thresholds::ENGINE_TEMP_MAX) temperature = Thresholds::ENGINE_TEMP_MAX;
 }
 
-void EngineTemperatureSensor::display() const {
-    std::cout << *this << "\n";
-}
-
+void        EngineTemperatureSensor::display()   const { std::cout << *this << "\n"; }
 double      EngineTemperatureSensor::getValue()  const { return temperature; }
 std::string EngineTemperatureSensor::getUnit()   const { return "C"; }
 std::string EngineTemperatureSensor::getStatus() const {
-    if (temperature > Thresholds::ENGINE_TEMP_CRITICAL)  return "CRITICAL";
-    if (temperature > Thresholds::ENGINE_TEMP_WARNING)   return "WARNING";
+    if (temperature > Thresholds::ENGINE_TEMP_CRITICAL) return "CRITICAL";
+    if (temperature > Thresholds::ENGINE_TEMP_WARNING)  return "WARNING";
+    return "NORMAL";
+}
+
+// ── Mock ──────────────────────────────────────────────────────────────────────
+MockEngineTemperatureSensor::MockEngineTemperatureSensor()
+    : Sensor("ENG_TEMP_01", SensorType::ENGINE_TEMPERATURE) {}
+
+void        MockEngineTemperatureSensor::display()   const { std::cout << *this << "\n"; }
+double      MockEngineTemperatureSensor::getValue()  const { return temperature; }
+std::string MockEngineTemperatureSensor::getUnit()   const { return "C"; }
+std::string MockEngineTemperatureSensor::getStatus() const {
+    if (temperature > Thresholds::ENGINE_TEMP_CRITICAL) return "CRITICAL";
+    if (temperature > Thresholds::ENGINE_TEMP_WARNING)  return "WARNING";
     return "NORMAL";
 }
